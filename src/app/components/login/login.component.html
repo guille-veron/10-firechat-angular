@@ -1,0 +1,28 @@
+<div class="row">
+    <div id="signin" class="col-md-12 text-center" >
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address" [(ngModel)]="correo">                                        
+        </div>
+    
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password" [(ngModel)]="pwd">                                        
+        </div>
+    
+        <button type="button" class="btn btn-primary" (click)="ingresar('correo')">Login</button>
+    </div>
+    <div class="col-md-12 text-center">
+        <p>
+            Ingrese al chat con su cuenta favorita
+        </p>
+        <button type="button" class="btn btn-outline-primary"
+                (click)="ingresar('google')">
+            Google
+        </button>
+        <button type="button" class="btn btn-outline-info"
+                (click)="ingresar('twitter')">
+            Twitter
+        </button>
+    </div>
+</div>
